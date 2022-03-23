@@ -82,6 +82,7 @@ func main() {
 	for j := 1; j <= numJobs; j++ {
 		jobs <- j
 	}
+
 	close(jobs)
 	var count int = 0
 	for a := 1; a <= numJobs; a++ {
